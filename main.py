@@ -59,7 +59,7 @@ class Academy:
                 file.write(f"{member.name}, {member.age}\n")
                 for training in member.workouts:
                     file.write(
-                        f"{training.description}, {training.duration}, {training.date}\n"
+                        f"Descrição: {training.description}\nDuração treino: {training.duration} horas\nData: {training.date}\n"
                     )
         print(
             f"\033[1;32mMembros e treinos salvos no arquivo {file_name} com sucesso!\033[0m"
